@@ -1,0 +1,29 @@
+{
+  "name": "xtpack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/**"
+  ],
+  "scripts": {
+    "build": "tsup src --format esm,cjs --dts",
+    "clean": "rm -rf node_modules && rm -rf dist",
+    "lint": "eslint src"
+  },
+  "keywords": [],
+  "author": "SlightlyEpic",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^9.5.0",
+    "globals": "^15.6.0",
+    "tsup": "^8.1.0",
+    "typescript-eslint": "^7.13.1"
+  },
+  "packageManager": "pnpm@8.15.6",
+  "engines": {
+    "node": ">=18"
+  }
+}
